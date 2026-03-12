@@ -1,59 +1,78 @@
-# Web Chatbot
+# Personal Profile & Blog Platform
 
 ## What This Is
 
-A web-based chatbot application that allows users to interact with an AI assistant through a conversational interface. The chatbot will be able to answer questions, provide information, and assist with various tasks in a user-friendly web environment.
+A personal digital presence consisting of a professional portfolio/profile section and a functional blog. Built as a static website hosted on GitHub Pages, designed to showcase skills, experience, and projects while providing a space for sharing insights and thoughts with recruiters, potential clients, and readers.
 
 ## Core Value
 
-Provide an intuitive, responsive, and intelligent conversational interface that makes complex information easily accessible to users through natural language interactions.
+Recruiters and visitors can quickly understand who I am, what I've built, and what I think about within 3 seconds of landing on the site.
 
 ## Requirements
 
 ### Validated
 
-<!-- Shipped and confirmed valuable. -->
-
 (None yet — ship to validate)
 
 ### Active
 
-<!-- Current scope. Building toward these. -->
-
-- [ ] Create a responsive web interface for chat interactions
-- [ ] Implement core chat functionality with message history
-- [ ] Add AI response generation capabilities
-- [ ] Enable user authentication for personalized experiences
-- [ ] Include basic error handling and loading states
+- [ ] Home page with introduction and CTA to view projects
+- [ ] About Me section with bio, background, education, professional summary
+- [ ] Projects/Portfolio grid with descriptions, technologies, links to demos/repos
+- [ ] Blog index listing articles with titles, dates, excerpts
+- [ ] Individual blog post view with clean reading experience
+- [ ] Contact section with social links/email
+- [ ] Responsive navigation bar (sticky/fixed header)
+- [ ] Footer with copyright and social profile links
+- [ ] Dark/Light mode toggle with localStorage persistence
+- [ ] Smooth scrolling for navigation
+- [ ] UI-based notifications (no native alerts)
+- [ ] Fast load time (< 3 seconds on mobile networks)
+- [ ] SEO: meta tags, sitemap, robots.txt, semantic HTML
+- [ ] WCAG AA accessibility: contrast, keyboard navigation, 16px+ fonts
+- [ ] GitHub Pages hosting with CI/CD deployment
 
 ### Out of Scope
 
-<!-- Explicit boundaries. Includes reasoning to prevent re-adding. -->
-
-- [Mobile app version] — Focus on web-first experience initially
-- [Advanced AI models] — Start with standard capabilities, expand later
-- [Multi-language support] — English only for v1
-- [Voice input/output] — Text-based interface only
+- Backend server or database — static site generator only
+- User authentication or comments system
+- Contact form backend — links to external services instead
+- Custom domain setup (optional, not required for MVP)
+- Blog archive by category/date filtering (can add later)
 
 ## Context
 
-This project aims to build a modern web chatbot that can be integrated into various websites and applications. The system will use a clean, responsive UI with smooth interactions.
+**Target Audience:**
+1. Recruiters & Hiring Managers — viewing experience, projects, skills
+2. Potential Clients — interested in services/portfolio work
+3. Readers — consuming blog content
+
+**Design Principles:**
+- Clean & Minimalist: avoid clutter, focus on content
+- Consistent Branding: specific color palette and typography
+- Mobile-First: design mobile experience first, scale to desktop
+
+**Content Requirements:**
+- Professional headshot
+- Bio text (concise professional summary)
+- Project details with screenshots and links
+- High-quality blog posts with headings and images
 
 ## Constraints
 
-- **Tech stack**: Modern JavaScript/TypeScript with React frontend
-- **Timeline**: 6-8 weeks for v1 release
-- **Budget**: Limited resources, focus on core functionality
-- **Performance**: Must load and respond within 2 seconds
-- **Security**: User data must be protected and private
+- **Platform**: Static Website — must use static site generation
+- **Hosting**: GitHub Pages — deployment must work within this constraint
+- **Performance**: < 3 second load time — especially on mobile networks
+- **Accessibility**: WCAG AA standards — keyboard navigation, contrast ratios, font sizes
+- **Tech Stack**: SSG (Jekyll/Hugo/Astro) or vanilla HTML/CSS/JS — choice to be made during planning
 
 ## Key Decisions
 
-<!-- Decisions that constrain future work. Add throughout project lifecycle. -->
-
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| [Web-first approach] | Focus resources on desktop/web experience first | — Pending |
+| Auto mode (YOLO) enabled | Fast iteration, trust the process | — Pending |
+| Coarse granularity | Fewer, broader phases for faster delivery | — Pending |
+| Parallel execution | Independent plans run simultaneously | — Pending |
 
 ---
-*Last updated: 2026-03-05 after initialization*
+*Last updated: 2026-03-12 after initialization*
