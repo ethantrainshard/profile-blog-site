@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+    <clipPath id="circle-clip">
+      <circle cx="150" cy="120" r="80" />
+    </clipPath>
+  </defs>
+
+  <!-- Background Circle -->
+  <circle cx="150" cy="150" r="150" fill="url(#bg-gradient)" />
+
+  <!-- Head -->
+  <g clip-path="url(#circle-clip)">
+    <circle cx="150" cy="110" r="70" fill="#e2e8f0" />
+
+    <!-- Simple Face -->
+    <circle cx="130" cy="100" r="8" fill="#1e293b" />
+    <circle cx="170" cy="100" r="8" fill="#1e293b" />
+    <path d="M 135 115 Q 150 125 165 115" stroke="#1e293b" stroke-width="3" fill="none" stroke-linecap="round" />
+    <circle cx="115" cy="110" r="15" fill="#fcd34d" opacity="0.3" />
+    <circle cx="185" cy="110" r="15" fill="#fcd34d" opacity="0.3" />
+  </g>
+
+  <!-- Simple Body -->
+  <path d="M 70 200 Q 150 190 230 200 L 230 300 L 70 300 Z" fill="#6366f1" />
+
+  <!-- Ties -->
+  <polygon points="150,200 140,230 150,240 160,230" fill="#ef4444" />
+
+  <!-- Name -->
+  <text x="150" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">
+    Your Name
+  </text>
+</svg>

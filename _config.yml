@@ -1,0 +1,22 @@
+# Profile Blog - Jekyll Configuration
+name: Ethan Goh
+description: Professional portfolio and blog sharing insights on technology and development
+url: https://cyberitdad.github.io
+baseurl: /
+avatar: /assets/images/profile.svg
+email: ethantrainshard@gmail.com
+github: ethantrainshard
+linkedin: ethan-goh-9b6615a7
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+# Exclude from processing
+exclude:
+  - README.md
+  - .gitignore
+  - node_modules

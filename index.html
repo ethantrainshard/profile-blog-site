@@ -1,0 +1,121 @@
+---
+layout: default
+title: Home
+---
+
+<section class="profile-layout">
+  <!-- Left Sidebar -->
+  <aside class="left-sidebar">
+    <div class="profile-card">
+      <div class="profile-header">
+        <img src="/assets/images/profile.svg" alt="{{ site.name }}" class="profile-photo">
+        <h2 class="profile-name">{{ site.name }}</h2>
+        <p class="profile-headline">{{ site.description }}</p>
+      </div>
+      <div class="profile-actions">
+        <a href="/contact" class="btn btn-primary">Contact</a>
+        <button class="btn btn-outline" aria-label="Save profile">Save</button>
+      </div>
+    </div>
+
+    <div class="contact-info">
+      <h3 class="section-label">Contact Info</h3>
+      <div class="info-item">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+          <circle cx="12" cy="10" r="3"></circle>
+        </svg>
+        <span>Singapore, SG</span>
+      </div>
+      <div class="info-item">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+          <circle cx="9" cy="7" r="4"></circle>
+          <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+          <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+        </svg>
+        <span>500+ connections</span>
+      </div>
+      <div class="social-links-mini">
+        <a href="https://github.com/{{ site.github }}" target="_blank" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+        </a>
+        <a href="https://linkedin.com/in/{{ site.linkedin }}" target="_blank" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+        <a href="mailto:{{ site.email }}" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="skills-section">
+      <h3 class="section-label">Skills</h3>
+      <span class="skill-tag">JavaScript</span>
+      <span class="skill-tag">Python</span>
+      <span class="skill-tag">React</span>
+      <span class="skill-tag">Node.js</span>
+      <span class="skill-tag">PostgreSQL</span>
+    </div>
+  </aside>
+
+  <!-- Center Column -->
+  <main class="center-column">
+    <nav class="content-tabs" role="tablist">
+      <button class="tab active" data-tab="experience" role="tab" aria-selected="true">Experience</button>
+      <button class="tab" data-tab="blog" role="tab" aria-selected="false">Blog</button>
+    </nav>
+
+    <!-- Experience view -->
+    <div id="experience-view" class="content-view">
+      <article class="experience-card">
+        <div class="experience-header">
+          <h3 class="job-title">Senior Software Engineer</h3>
+          <p class="company">Tech Company Inc. | <span class="dates">Jan 2023 - Present</span></p>
+          <p class="location">Singapore, SG</p>
+        </div>
+        <p class="experience-description">
+          Leading development of scalable web applications, mentoring junior developers,
+          and driving technical architecture decisions for high-traffic platforms.
+        </p>
+      </article>
+
+      <article class="experience-card">
+        <div class="experience-header">
+          <h3 class="job-title">Software Engineer</h3>
+          <p class="company">Startup Studio | <span class="dates">Jun 2020 - Dec 2022</span></p>
+          <p class="location">Singapore, SG</p>
+        </div>
+        <p class="experience-description">
+          Built and maintained multiple client projects using modern web technologies.
+          Collaborated with design and product teams to deliver user-centric solutions.
+        </p>
+      </article>
+    </div>
+
+    <!-- Blog view -->
+    <div id="blog-view" class="content-view hidden">
+      {% for post in site.posts limit: 5 %}
+      <article class="blog-card">
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <time class="post-date">{{ post.date | date: '%B %d, %Y' }}</time>
+        <p class="blog-excerpt">{{ post.excerpt }}</p>
+        <a href="{{ post.url }}" class="read-more">Read more →</a>
+      </article>
+      {% endfor %}
+    </div>
+  </main>
+
+  <!-- Right Sidebar (reserved for future use) -->
+  <aside class="right-sidebar">
+  </aside>
+</section>

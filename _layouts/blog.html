@@ -1,0 +1,20 @@
+---
+layout: default
+title: Blog
+---
+
+<section class="blog-list">
+  <div class="container">
+    <h2>Latest Posts</h2>
+    <div class="posts">
+      {% for post in site.posts %}
+      <article class="post-card">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+        <a href="{{ post.url }}" class="read-more">Read more →</a>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
