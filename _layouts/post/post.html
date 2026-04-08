@@ -15,43 +15,36 @@
     <nav class="linkedin-header">
       <div class="linkedin-header-left">
         <a href="/" class="linkedin-logo">{{ site.name }}</a>
-        <a href="/blog" class="linkedin-header-link">My Blog</a>
       </div>
       <div class="linkedin-header-right">
         <a href="/" class="linkedin-header-link">Home</a>
         <a href="/about" class="linkedin-header-link">About</a>
         <a href="/projects" class="linkedin-header-link">Projects</a>
-        <a href="/blog" class="linkedin-header-link">Blog</a>
         <a href="/contact" class="linkedin-header-link">Contact</a>
       </div>
     </nav>
   </header>
 
-  <main class="post-main">
-    <div class="post-container">
+  <main class="post-page">
+    <article class="post-container">
       <a href="/blog" class="back-to-blog">← Back to Blog</a>
-      <article class="post-article">
-        <header class="post-article-header">
-          <h1>{{ page.title }}</h1>
-          <div class="post-meta">
-            <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B %d, %Y' }}</time>
-            {% if page.tags %}
-            <span class="post-tags">
-              {% for tag in page.tags %}
-                <span class="tag">{{ tag }}</span>
-              {% endfor %}
-            </span>
-            {% endif %}
-          </div>
-        </header>
-        <div class="post-content">
-          {{ content }}
+      <h1>{{ page.title }}</h1>
+      <div class="post-meta">
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B %d, %Y' }}</time>
+        {% if page.tags %}
+        <div class="post-tags">
+          {% for tag in page.tags %}
+            <a href="/blog#{{ tag }}" class="tag" data-tag="{{ tag }}">{{ tag }}</a>
+          {% endfor %}
         </div>
-      </article>
-    </div>
+        {% endif %}
+      </div>
+      <div class="post-content">
+        {{ content }}
+      </div>
+    </article>
   </main>
 
-  <script src="/js/profile-tabs.js"></script>
   <script src="/js/main.js"></script>
 </body>
 </html>

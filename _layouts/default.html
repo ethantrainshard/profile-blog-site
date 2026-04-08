@@ -12,45 +12,17 @@
 </head>
 <body>
   <header>
-    {% if page.url == '/' %}
-    <!-- Main page: simple logo only -->
-    <nav class="main-header">
-      <a href="/" class="logo">{{ site.name }}</a>
-      <button class="mobile-menu-toggle" aria-label="Toggle menu">
-        <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <line class="line-1" x1="3" y1="12" x2="21" y2="12"></line>
-          <line class="line-2" x1="3" y1="6" x2="21" y2="6"></line>
-          <line class="line-3" x1="3" y1="18" x2="21" y2="18"></line>
-        </svg>
-        <svg class="close-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <line x1="18" y1="6" x2="6" y2="18"></line>
-          <line x1="6" y1="6" x2="18" y2="18"></line>
-        </svg>
-      </button>
-      <ul class="nav-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/projects">Projects</a></li>
-        <li><a href="/blog">Blog</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
-    </nav>
-    {% else %}
-    <!-- Other pages: LinkedIn-style header -->
     <nav class="linkedin-header">
       <div class="linkedin-header-left">
         <a href="/" class="linkedin-logo">{{ site.name }}</a>
-        <a href="/blog" class="linkedin-header-link">My Blog</a>
       </div>
       <div class="linkedin-header-right">
         <a href="/" class="linkedin-header-link">Home</a>
         <a href="/about" class="linkedin-header-link">About</a>
         <a href="/projects" class="linkedin-header-link">Projects</a>
-        <a href="/blog" class="linkedin-header-link">Blog</a>
         <a href="/contact" class="linkedin-header-link">Contact</a>
       </div>
     </nav>
-    {% endif %}
   </header>
 
   <main>

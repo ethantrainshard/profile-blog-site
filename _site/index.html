@@ -12,30 +12,17 @@
 </head>
 <body>
   <header>
-    
-    <!-- Main page: simple logo only -->
-    <nav class="main-header">
-      <a href="/" class="logo">Ethan Goh</a>
-      <button class="mobile-menu-toggle" aria-label="Toggle menu">
-        <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <line class="line-1" x1="3" y1="12" x2="21" y2="12"></line>
-          <line class="line-2" x1="3" y1="6" x2="21" y2="6"></line>
-          <line class="line-3" x1="3" y1="18" x2="21" y2="18"></line>
-        </svg>
-        <svg class="close-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <line x1="18" y1="6" x2="6" y2="18"></line>
-          <line x1="6" y1="6" x2="18" y2="18"></line>
-        </svg>
-      </button>
-      <ul class="nav-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/projects">Projects</a></li>
-        <li><a href="/blog">Blog</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
+    <nav class="linkedin-header">
+      <div class="linkedin-header-left">
+        <a href="/" class="linkedin-logo">Ethan Goh</a>
+      </div>
+      <div class="linkedin-header-right">
+        <a href="/" class="linkedin-header-link">Home</a>
+        <a href="/about" class="linkedin-header-link">About</a>
+        <a href="/projects" class="linkedin-header-link">Projects</a>
+        <a href="/contact" class="linkedin-header-link">Contact</a>
+      </div>
     </nav>
-    
   </header>
 
   <main>
@@ -50,7 +37,6 @@
       </div>
       <div class="profile-actions">
         <a href="/contact" class="btn btn-primary">Contact</a>
-        <button class="btn btn-outline" aria-label="Save profile">Save</button>
       </div>
     </div>
 
@@ -140,8 +126,15 @@
 
     <!-- Blog view -->
     <div id="blog-view" class="content-view hidden">
+      <!-- Tags Filter Section -->
+      <div class="tags-section">
+        <h3 class="section-label">Filter by Tag</h3>
+        <div id="dynamic-tags" class="tags-grid"></div>
+        <button id="clear-filter-btn" class="clear-filter-btn hidden">Clear Filter</button>
+      </div>
+
       
-      <article class="blog-card">
+      <article class="blog-card" data-tags="introduction journey">
         <h3><a href="/life/2026/03/14/hello-world.html">Hello World: Starting My Journey</a></h3>
         <time class="post-date">March 14, 2026</time>
         <p class="blog-excerpt">Welcome to my blog! This is where I share my thoughts, experiences, and learnings.</p>
@@ -150,10 +143,6 @@
       
     </div>
   </main>
-
-  <!-- Right Sidebar (reserved for future use) -->
-  <aside class="right-sidebar">
-  </aside>
 </section>
   </main>
 

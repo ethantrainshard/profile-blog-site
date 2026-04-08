@@ -12,40 +12,124 @@
 </head>
 <body>
   <header>
-    
-    <!-- Other pages: LinkedIn-style header -->
     <nav class="linkedin-header">
       <div class="linkedin-header-left">
         <a href="/" class="linkedin-logo">Ethan Goh</a>
-        <a href="/blog" class="linkedin-header-link">My Blog</a>
       </div>
       <div class="linkedin-header-right">
         <a href="/" class="linkedin-header-link">Home</a>
         <a href="/about" class="linkedin-header-link">About</a>
         <a href="/projects" class="linkedin-header-link">Projects</a>
-        <a href="/blog" class="linkedin-header-link">Blog</a>
         <a href="/contact" class="linkedin-header-link">Contact</a>
       </div>
     </nav>
-    
   </header>
 
   <main>
     <section class="blog-list">
   <div class="container">
     <h2>Latest Posts</h2>
-    <div class="posts">
+
+    <!-- Tag Filter -->
+    <div class="blog-filters">
+      <button class="filter-btn active" data-filter="all">All Posts</button>
       
-      <article class="post-card">
+      
+      <button class="filter-btn" data-filter="introduction">introduction</button>
+      
+      <button class="filter-btn" data-filter="journey">journey</button>
+      
+    </div>
+
+    <div class="posts" id="blog-posts">
+      
+      <article class="post-card" data-tags="introduction journey">
         <time datetime="2026-03-14T18:00:00+08:00">March 14, 2026</time>
         <h3><a href="/life/2026/03/14/hello-world.html">Hello World: Starting My Journey</a></h3>
         <p>Welcome to my blog! This is where I share my thoughts, experiences, and learnings.</p>
+        <div class="post-tags-inline">
+          
+          <span class="tag-inline">introduction</span>
+          
+          <span class="tag-inline">journey</span>
+          
+        </div>
         <a href="/life/2026/03/14/hello-world.html" class="read-more">Read more →</a>
       </article>
       
     </div>
   </div>
 </section>
+
+<script>
+(function() {
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const posts = document.querySelectorAll('.post-card');
+  const tagInlines = document.querySelectorAll('.tag-inline');
+
+  // Filter by button click
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // Update active button
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filter = btn.dataset.filter;
+
+      // Filter posts
+      posts.forEach(post => {
+        if (filter === 'all') {
+          post.style.display = '';
+        } else {
+          const postTags = post.dataset.tags.toLowerCase();
+          if (postTags.includes(filter.toLowerCase())) {
+            post.style.display = '';
+          } else {
+            post.style.display = 'none';
+          }
+        }
+      });
+    });
+  });
+
+  // Filter by inline tag click
+  tagInlines.forEach(tag => {
+    tag.addEventListener('click', (e) => {
+      e.preventDefault();
+      const filter = tag.textContent.toLowerCase();
+
+      // Update active button
+      filterBtns.forEach(b => b.classList.remove('active'));
+      const activeBtn = Array.from(filterBtns).find(b => b.dataset.filter === filter);
+      if (activeBtn) {
+        activeBtn.classList.add('active');
+      }
+
+      // Filter posts
+      posts.forEach(post => {
+        const postTags = post.dataset.tags.toLowerCase();
+        if (postTags.includes(filter)) {
+          post.style.display = '';
+        } else {
+          post.style.display = 'none';
+        }
+      });
+
+      // Scroll to top of posts
+      document.getElementById('blog-posts').scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+
+  // Handle hash navigation on page load
+  if (window.location.hash) {
+    const hash = window.location.hash.substring(1);
+    const tagBtn = Array.from(filterBtns).find(b => b.dataset.filter === hash);
+    if (tagBtn) {
+      tagBtn.click();
+    }
+  }
+})();
+</script>
   </main>
 
   <footer>

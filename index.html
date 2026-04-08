@@ -14,7 +14,6 @@ title: Home
       </div>
       <div class="profile-actions">
         <a href="/contact" class="btn btn-primary">Contact</a>
-        <button class="btn btn-outline" aria-label="Save profile">Save</button>
       </div>
     </div>
 
@@ -104,8 +103,15 @@ title: Home
 
     <!-- Blog view -->
     <div id="blog-view" class="content-view hidden">
+      <!-- Tags Filter Section -->
+      <div class="tags-section">
+        <h3 class="section-label">Filter by Tag</h3>
+        <div id="dynamic-tags" class="tags-grid"></div>
+        <button id="clear-filter-btn" class="clear-filter-btn hidden">Clear Filter</button>
+      </div>
+
       {% for post in site.posts limit: 5 %}
-      <article class="blog-card">
+      <article class="blog-card" data-tags="{{ post.tags | join: ' ' | downcase }}">
         <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
         <time class="post-date">{{ post.date | date: '%B %d, %Y' }}</time>
         <p class="blog-excerpt">{{ post.excerpt }}</p>
@@ -114,25 +120,4 @@ title: Home
       {% endfor %}
     </div>
   </main>
-
-  <!-- Right Sidebar - Tags -->
-  <aside class="right-sidebar">
-    <div class="tags-section">
-      <h3 class="section-label">Tags</h3>
-      <div class="tags-grid">
-        <span class="skill-tag">cybersecurity</span>
-        <span class="skill-tag">penetration-testing</span>
-        <span class="skill-tag">network-security</span>
-        <span class="skill-tag">python</span>
-        <span class="skill-tag">javascript</span>
-        <span class="skill-tag">react</span>
-        <span class="skill-tag">cloud-security</span>
-        <span class="skill-tag">aws</span>
-        <span class="skill-tag">azure</span>
-        <span class="skill-tag">compliance</span>
-        <span class="skill-tag">gcp</span>
-        <span class="skill-tag">devops</span>
-      </div>
-    </div>
-  </aside>
 </section>
