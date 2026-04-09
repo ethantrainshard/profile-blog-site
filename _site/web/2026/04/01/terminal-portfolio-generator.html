@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An automated portfolio generator that creates beautiful static sites from simple Markdown files">
+  <meta name="author" content="Ethan Goh">
+  <title>Terminal Portfolio Generator | Ethan Goh</title>
+
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <header>
+    <nav class="linkedin-header">
+      <div class="linkedin-header-left">
+        <a href="/" class="linkedin-logo">Ethan Goh</a>
+      </div>
+      <div class="linkedin-header-right">
+        <a href="/" class="linkedin-header-link">Home</a>
+        <a href="/about" class="linkedin-header-link">About</a>
+        <a href="/projects" class="linkedin-header-link">Projects</a>
+        <a href="/contact" class="linkedin-header-link">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="post-page">
+    <article class="post-container">
+      <a href="/blog" class="back-to-blog">← Back to Blog</a>
+      <h1>Terminal Portfolio Generator</h1>
+      <div class="post-meta">
+        <time datetime="2026-04-01T18:00:00+08:00">April 01, 2026</time>
+        
+        <div class="post-tags">
+          
+            <a href="/blog#jekyll" class="tag" data-tag="jekyll">jekyll</a>
+          
+            <a href="/blog#markdown" class="tag" data-tag="markdown">markdown</a>
+          
+            <a href="/blog#automation" class="tag" data-tag="automation">automation</a>
+          
+        </div>
+        
+      </div>
+      <div class="post-content">
+        <h2 id="overview">Overview</h2>
+
+<p>A powerful tool that transforms simple Markdown files into stunning, production-ready portfolio websites. Perfect for developers who want to showcase their work without touching HTML/CSS.</p>
+
+<h2 id="features">Features</h2>
+
+<ul>
+  <li><strong>Zero Configuration</strong>: Just write Markdown and let the generator handle the rest</li>
+  <li><strong>Custom Themes</strong>: Choose from 10+ pre-built themes or create your own</li>
+  <li><strong>Automatic Deployment</strong>: Push to GitHub and get instant preview</li>
+  <li><strong>SEO Optimized</strong>: Built-in meta tags and sitemap generation</li>
+  <li><strong>Dark Mode</strong>: Automatic dark/light theme detection</li>
+</ul>
+
+<h2 id="quick-start">Quick Start</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">install</span> <span class="nt">-g</span> terminal-portfolio
+terminal-portfolio init my-portfolio
+terminal-portfolio build
+terminal-portfolio preview
+</code></pre></div></div>
+
+<h2 id="why-build-this">Why Build This?</h2>
+
+<p>I created this tool because I was tired of spending more time designing portfolios than actually building projects. Now I can focus on what matters - coding great software.</p>
+
+<h2 id="tech-stack">Tech Stack</h2>
+
+<p>Built with Jekyll and custom Liquid filters. The entire generator is under 500 lines of Ruby code.</p>
+
+      </div>
+    </article>
+  </main>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
