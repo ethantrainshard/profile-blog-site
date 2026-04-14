@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 title: "Redis API Rate Limiter"
 date: 2026-03-28 14:30:00
 category: api

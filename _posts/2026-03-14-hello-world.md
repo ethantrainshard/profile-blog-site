@@ -1,10 +1,9 @@
 ---
-layout: post
 title: "Hello World: Starting My Journey"
-date: 2026-03-14 10:00:00
 category: life
 tags: [introduction, journey]
 excerpt: "Welcome to my blog! This is where I share my thoughts, experiences, and learnings."
+layout: post/post
 demo_url: ""
 github_url: ""
 ---

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 title: "SnippetHub - Code Snippet Manager"
 date: 2026-03-10 08:30:00
 category: web

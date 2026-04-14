@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 title: "WeatherCLI - Terminal Weather Dashboard"
 date: 2026-03-20 16:45:00
 category: web

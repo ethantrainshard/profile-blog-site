@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 title: "Terminal Portfolio Generator"
 date: 2026-04-01 10:00:00
 category: web

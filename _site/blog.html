@@ -27,8 +27,12 @@
   </header>
 
   <main>
-    <section class="blog-list">
-  <div class="container">
+    <section class="blog-list page-bg-container">
+  <!-- Background glow pattern -->
+  <div class="page-bg-pattern"></div>
+  <div class="scan-lines"></div>
+
+  <div class="container page-content">
     <h2>Latest Posts</h2>
 
     <!-- Tag Filter -->
@@ -36,130 +40,16 @@
       <button class="filter-btn active" data-filter="all">All Posts</button>
       
       
-      <button class="filter-btn" data-filter="api">api</button>
-      
-      <button class="filter-btn" data-filter="automation">automation</button>
-      
-      <button class="filter-btn" data-filter="cli">cli</button>
-      
-      <button class="filter-btn" data-filter="database">database</button>
-      
-      <button class="filter-btn" data-filter="devops">devops</button>
-      
-      <button class="filter-btn" data-filter="go">go</button>
-      
       <button class="filter-btn" data-filter="introduction">introduction</button>
       
-      <button class="filter-btn" data-filter="javascript">javascript</button>
-      
-      <button class="filter-btn" data-filter="jekyll">jekyll</button>
-      
       <button class="filter-btn" data-filter="journey">journey</button>
-      
-      <button class="filter-btn" data-filter="markdown">markdown</button>
-      
-      <button class="filter-btn" data-filter="mobile">mobile</button>
-      
-      <button class="filter-btn" data-filter="nodejs">nodejs</button>
-      
-      <button class="filter-btn" data-filter="productivity">productivity</button>
-      
-      <button class="filter-btn" data-filter="python">python</button>
-      
-      <button class="filter-btn" data-filter="react-native">react-native</button>
-      
-      <button class="filter-btn" data-filter="redis">redis</button>
-      
-      <button class="filter-btn" data-filter="search">search</button>
-      
-      <button class="filter-btn" data-filter="weather">weather</button>
       
     </div>
 
     <div class="posts" id="blog-posts">
       
-      <article class="post-card" data-tags="jekyll markdown automation">
-        <time datetime="2026-04-01T18:00:00+08:00">April 01, 2026</time>
-        <h3><a href="/web/2026/04/01/terminal-portfolio-generator.html">Terminal Portfolio Generator</a></h3>
-        <p>An automated portfolio generator that creates beautiful static sites from simple Markdown files</p>
-        <div class="post-tags-inline">
-          
-          <span class="tag-inline">jekyll</span>
-          
-          <span class="tag-inline">markdown</span>
-          
-          <span class="tag-inline">automation</span>
-          
-        </div>
-        <a href="/web/2026/04/01/terminal-portfolio-generator.html" class="read-more">Read more →</a>
-      </article>
-      
-      <article class="post-card" data-tags="redis nodejs api">
-        <time datetime="2026-03-28T22:30:00+08:00">March 28, 2026</time>
-        <h3><a href="/api/2026/03/28/api-rate-limiter.html">Redis API Rate Limiter</a></h3>
-        <p>A high-performance rate limiting service built with Redis for protecting APIs from abuse</p>
-        <div class="post-tags-inline">
-          
-          <span class="tag-inline">redis</span>
-          
-          <span class="tag-inline">nodejs</span>
-          
-          <span class="tag-inline">api</span>
-          
-        </div>
-        <a href="/api/2026/03/28/api-rate-limiter.html" class="read-more">Read more →</a>
-      </article>
-      
-      <article class="post-card" data-tags="react-native mobile productivity">
-        <time datetime="2026-03-25T17:00:00+08:00">March 25, 2026</time>
-        <h3><a href="/mobile/2026/03/25/mobile-task-manager.html">TaskFlow - Mobile Task Manager</a></h3>
-        <p>A beautiful, distraction-free task management app for iOS and Android</p>
-        <div class="post-tags-inline">
-          
-          <span class="tag-inline">react-native</span>
-          
-          <span class="tag-inline">mobile</span>
-          
-          <span class="tag-inline">productivity</span>
-          
-        </div>
-        <a href="/mobile/2026/03/25/mobile-task-manager.html" class="read-more">Read more →</a>
-      </article>
-      
-      <article class="post-card" data-tags="python cli weather">
-        <time datetime="2026-03-21T00:45:00+08:00">March 21, 2026</time>
-        <h3><a href="/web/2026/03/21/cli-weather-dashboard.html">WeatherCLI - Terminal Weather Dashboard</a></h3>
-        <p>Beautiful weather information displayed directly in your terminal with ASCII art visualizations</p>
-        <div class="post-tags-inline">
-          
-          <span class="tag-inline">python</span>
-          
-          <span class="tag-inline">cli</span>
-          
-          <span class="tag-inline">weather</span>
-          
-        </div>
-        <a href="/web/2026/03/21/cli-weather-dashboard.html" class="read-more">Read more →</a>
-      </article>
-      
-      <article class="post-card" data-tags="database go devops">
-        <time datetime="2026-03-15T19:20:00+08:00">March 15, 2026</time>
-        <h3><a href="/api/2026/03/15/database-migration-tool.html">MigrateGo - Database Migration Tool</a></h3>
-        <p>Type-safe database migrations with built-in rollback support and schema versioning</p>
-        <div class="post-tags-inline">
-          
-          <span class="tag-inline">database</span>
-          
-          <span class="tag-inline">go</span>
-          
-          <span class="tag-inline">devops</span>
-          
-        </div>
-        <a href="/api/2026/03/15/database-migration-tool.html" class="read-more">Read more →</a>
-      </article>
-      
       <article class="post-card" data-tags="introduction journey">
-        <time datetime="2026-03-14T18:00:00+08:00">March 14, 2026</time>
+        <time datetime="2026-03-14T00:00:00+08:00">March 14, 2026</time>
         <h3><a href="/life/2026/03/14/hello-world.html">Hello World: Starting My Journey</a></h3>
         <p>Welcome to my blog! This is where I share my thoughts, experiences, and learnings.</p>
         <div class="post-tags-inline">
@@ -172,24 +62,8 @@
         <a href="/life/2026/03/14/hello-world.html" class="read-more">Read more →</a>
       </article>
       
-      <article class="post-card" data-tags="javascript search productivity">
-        <time datetime="2026-03-10T16:30:00+08:00">March 10, 2026</time>
-        <h3><a href="/web/2026/03/10/code-snippet-manager.html">SnippetHub - Code Snippet Manager</a></h3>
-        <p>Organize, search, and share code snippets with powerful tagging and full-text search</p>
-        <div class="post-tags-inline">
-          
-          <span class="tag-inline">javascript</span>
-          
-          <span class="tag-inline">search</span>
-          
-          <span class="tag-inline">productivity</span>
-          
-        </div>
-        <a href="/web/2026/03/10/code-snippet-manager.html" class="read-more">Read more →</a>
-      </article>
-      
     </div>
-  </div>
+  </div><!-- End page-content -->
 </section>
 
 <script>

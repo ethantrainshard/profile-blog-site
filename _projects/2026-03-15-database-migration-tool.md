@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 title: "MigrateGo - Database Migration Tool"
 date: 2026-03-15 11:20:00
 category: api

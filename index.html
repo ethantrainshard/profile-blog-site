@@ -3,9 +3,13 @@ layout: default
 title: Home
 ---
 
-<section class="profile-layout">
+<section class="profile-layout page-bg-container">
+  <!-- Background glow pattern -->
+  <div class="page-bg-pattern"></div>
+  <div class="scan-lines"></div>
+
   <!-- Left Sidebar -->
-  <aside class="left-sidebar">
+  <aside class="left-sidebar page-content">
     <div class="profile-card">
       <div class="profile-header">
         <img src="/assets/images/profile.svg" alt="{{ site.name }}" class="profile-photo">
@@ -65,10 +69,10 @@ title: Home
       <span class="skill-tag">Node.js</span>
       <span class="skill-tag">PostgreSQL</span>
     </div>
-  </aside>
+  </aside><!-- End Left Sidebar -->
 
   <!-- Center Column -->
-  <main class="center-column">
+  <main class="center-column page-content">
     <nav class="content-tabs" role="tablist">
       <button class="tab active" data-tab="experience" role="tab" aria-selected="true">Experience</button>
       <button class="tab" data-tab="blog" role="tab" aria-selected="false">Blog</button>

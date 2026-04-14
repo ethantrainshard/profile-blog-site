@@ -15,6 +15,12 @@ kramdown:
   hard_wrap: false
   syntax_highlighter: rouge
 
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
 # Exclude from processing
 exclude:
   - README.md
