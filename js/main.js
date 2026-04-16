@@ -212,9 +212,18 @@ document.addEventListener('DOMContentLoaded', () => {
   }, observerOptions);
 
   document.querySelectorAll('.project-card, .blog-card').forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-    fadeObserver.observe(el);
+    const rect = el.getBoundingClientRect();
+    // Show if in viewport OR just below viewport (within 100px)
+    const isVisible = (rect.top >= 0 && rect.top <= window.innerHeight) ||
+                      (rect.top > 0 && rect.top < 100);
+
+    if (isVisible) {
+      fadeObserver.unobserve(el);
+    } else {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(20px)';
+      el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+      fadeObserver.observe(el);
+    }
   });
 });

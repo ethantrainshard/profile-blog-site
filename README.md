@@ -123,12 +123,104 @@ The output will be in the `_site` directory.
 
 ## Deploying to GitHub Pages
 
-1. **Create a GitHub repository** and push your code
-2. **Enable GitHub Pages:**
-   - Go to Settings → Pages
-   - Select branch `main`
-   - Click Save
-3. **That's it!** Your site will be live at `https://yourusername.github.io`
+### Step 1: Create a GitHub Repository
+
+1. Go to [GitHub.com](https://github.com) and sign in
+2. Click the **+** icon in the top-right corner and select **New repository**
+3. Enter a repository name (e.g., `yourusername.github.io` or any name like `profile-blog`)
+4. Choose **Public** or **Private** (Public is recommended for portfolios)
+5. **Do not** initialize with a README, .gitignore, or license (you already have these)
+6. Click **Create repository**
+
+### Step 2: Push Your Code to GitHub
+
+1. **Open Terminal** and navigate to your project folder:
+   ```bash
+   cd /path/to/profile-blog-site
+   ```
+
+2. **Add GitHub as the remote repository** (replace `yourusername` and `repo-name`):
+   ```bash
+   git remote add origin git@github.com:yourusername/repo-name.git
+   ```
+   
+   If you already have a remote configured, update it:
+   ```bash
+   git remote set-url origin git@github.com:yourusername/repo-name.git
+   ```
+
+3. **Verify the remote** (optional):
+   ```bash
+   git remote -v
+   ```
+
+4. **Stage all files**:
+   ```bash
+   git add .
+   ```
+
+5. **Commit your changes**:
+   ```bash
+   git commit -m "Initial commit: profile blog site"
+   ```
+
+6. **Push to GitHub**:
+   ```bash
+   git push -u origin main
+   ```
+   
+   If your default branch is `master`:
+   ```bash
+   git push -u origin master
+   ```
+
+### Step 3: Configure GitHub Pages
+
+1. **Navigate to your repository** on GitHub:
+   ```
+   https://github.com/yourusername/repo-name
+   ```
+
+2. **Go to Settings**:
+   - Click the **Settings** tab (may require clicking "More" dropdown first)
+
+3. **Find Pages settings**:
+   - Scroll down to the **Pages** section in the left sidebar (or click **Pages** under "Code and automation")
+
+4. **Configure source**:
+   - Under **Source**, select **Deploy from a branch**
+   - Under **Branch**, select:
+     - Branch: `main` (or `master`)
+     - Folder: `/ (root)`
+   - Click **Save**
+
+5. **Wait for deployment**:
+   - GitHub will build and deploy your site (takes 1-2 minutes)
+   - You can check progress at **Settings → Pages → Site deployment**
+
+### Step 4: Verify Your Site is Live
+
+1. **Visit your site URL**:
+   - For user/organization sites: `https://yourusername.github.io/repo-name/`
+   - For repository-specific sites: `https://yourusername.github.io/` (if repo is named `yourusername.github.io`)
+
+2. **Check for the custom domain option** (optional):
+   - In Settings → Pages, you can add a custom domain if you have one
+
+### Troubleshooting
+
+**"Your site is live" but site looks broken:**
+- Ensure `_config.yml` has the correct `url` setting
+- Check browser console for 404 errors
+
+**Push fails with authentication error:**
+- Use HTTPS URL instead: `https://github.com/yourusername/repo-name.git`
+- You'll be prompted for GitHub credentials (use Personal Access Token if 2FA is enabled)
+
+**GitHub Pages not showing:**
+- Wait up to 5 minutes for initial deployment
+- Check **Settings → Pages → Site deployment** for error messages
+- Ensure your HTML files are in the root (not in a subfolder)
 
 ## Custom Domain
 

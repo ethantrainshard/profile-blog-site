@@ -9,6 +9,12 @@
 
   <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
   <link rel="stylesheet" href="/css/main.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init("i1NkiDh4Z2cvFHa5g");
+    })();
+  </script>
 </head>
 <body>
   <header>
@@ -19,6 +25,7 @@
       <div class="linkedin-header-right">
         <a href="/" class="linkedin-header-link">Home</a>
         <a href="/about" class="linkedin-header-link">About</a>
+        <a href="/experience" class="linkedin-header-link">Experience</a>
         <a href="/projects" class="linkedin-header-link">Projects</a>
         <a href="/blog" class="linkedin-header-link">Blog</a>
         <a href="/contact" class="linkedin-header-link">Contact</a>
@@ -131,7 +138,7 @@
             <span class="btn-loader" aria-hidden="true"></span>
           </button>
 
-          <!-- Form Message (Success/Error) -->
+          <!-- Success Message (Success/Error) -->
           <div class="form-message" id="formMessage" role="alert" aria-live="polite"></div>
         </form>
       </div>
@@ -150,7 +157,7 @@
 
         <div class="contact-methods-grid">
           <!-- Email Card -->
-          <a href="mailto:ethantrainshard@gmail.com" class="contact-card" aria-label="Email me at ethantrainshard@gmail.com">
+          <a href="mailto:info@cyberitdad.xyz" class="contact-card" aria-label="Email me at info@cyberitdad.xyz">
             <div class="card-icon-wrapper">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
                 <rect x="2" y="4" width="20" height="16" rx="2"></rect>
@@ -215,24 +222,30 @@ function handleContactSubmit(event) {
   // Show loading state
   setSubmittingState(submitBtn, true);
 
+  // Get form values
   const formData = new FormData(form);
-  const email = formData.get('email');
+  const name = formData.get('name').trim();
+  const email = formData.get('email').trim();
+  const message = formData.get('message').trim();
 
-  // Simulate form submission (replace with actual form handling)
-  setTimeout(() => {
-    // Success state
-    showFormMessage(formMessage, 'success', 'Message sent successfully! I will get back to you soon.');
-    form.reset();
+  // Send email via EmailJS
+  const templateParams = {
+    from_name: name,
+    from_email: email,
+    message: message,
+    reply_to: email
+  };
 
-    // Reset button state
-    setSubmittingState(submitBtn, false);
-
-    // Hide message after 5 seconds
-    setTimeout(() => {
-      formMessage.textContent = '';
-      formMessage.className = 'form-message';
-    }, 5000);
-  }, 1500);
+  emailjs.send('service_zcxconc', 'template_jh96f9s', templateParams)
+    .then(function() {
+      showFormMessage(formMessage, 'success', 'Message sent successfully! I will get back to you soon.');
+      form.reset();
+      setSubmittingState(submitBtn, false);
+    }, function(error) {
+      showFormMessage(formMessage, 'error', 'Failed to send message. Please try again or email me directly.');
+      setSubmittingState(submitBtn, false);
+      console.error('EmailJS error:', error);
+    });
 }
 
 // Validate form fields
@@ -323,6 +336,20 @@ function showFormMessage(element, type, message) {
   element.className = `form-message ${type}`;
 }
 
+// Reset form after email is sent (optional - for retry)
+function resetFormAfterDelay() {
+  const form = document.querySelector('.contact-form');
+  const emailActionContainer = document.getElementById('emailActionContainer');
+  const submitBtn = document.getElementById('submitBtn');
+
+  if (form && emailActionContainer) {
+    setTimeout(() => {
+      form.style.display = 'block';
+      emailActionContainer.style.display = 'none';
+    }, 10000);
+  }
+}
+
 // Add input focus effects
 document.addEventListener('DOMContentLoaded', function() {
   const form = document.querySelector('.contact-form');
@@ -372,7 +399,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <circle cx="4" cy="4" r="2"></circle>
           </svg>
         </a>
-        <a href="mailto:ethantrainshard@gmail.com" aria-label="Email">
+        <a href="mailto:info@cyberitdad.xyz" aria-label="Email">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
             <polyline points="22,6 12,13 2,6"></polyline>

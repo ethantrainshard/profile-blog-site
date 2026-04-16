@@ -12,7 +12,7 @@ title: Home
   <aside class="left-sidebar page-content">
     <div class="profile-card">
       <div class="profile-header">
-        <img src="/assets/images/profile.svg" alt="{{ site.name }}" class="profile-photo">
+        <img src="/assets/images/profile_current.jpeg" alt="{{ site.name }}" class="profile-photo">
         <h2 class="profile-name">{{ site.name }}</h2>
         <p class="profile-headline">{{ site.description }}</p>
       </div>
@@ -63,50 +63,60 @@ title: Home
 
     <div class="skills-section">
       <h3 class="section-label">Skills</h3>
+
+      <!-- Project Management -->
+      <h4 class="skill-category">Project Management</h4>
+      <span class="skill-tag">Management</span>
+      <span class="skill-tag">Team Leadership</span>
+
+      <!-- Software Development -->
+      <h4 class="skill-category">Software Development</h4>
+      <span class="skill-tag">Python (Programming Language)</span>
+      <span class="skill-tag">Software Development</span>
+      <span class="skill-tag">Web Development</span>
       <span class="skill-tag">JavaScript</span>
-      <span class="skill-tag">Python</span>
-      <span class="skill-tag">React</span>
-      <span class="skill-tag">Node.js</span>
-      <span class="skill-tag">PostgreSQL</span>
+      <span class="skill-tag">OpenShift</span>
+
+      <!-- AI & Machine Learning -->
+      <h4 class="skill-category">AI & Machine Learning</h4>
+      <span class="skill-tag">Generative AI</span>
+      <span class="skill-tag">Large Language Models (LLM)</span>
+      <span class="skill-tag">IBM watson</span>
+      <span class="skill-tag">Artificial Intelligence (AI)</span>
+
+      <!-- Prompt Engineering -->
+      <h4 class="skill-category">Prompt Engineering</h4>
+      <span class="skill-tag">Prompt Engineering</span>
+      <span class="skill-tag">Prompt Engineering for Everyone</span>
+      <span class="skill-tag">IBM watsonx Foundations</span>
+      <span class="skill-tag">Generative AI Essentials</span>
+      <span class="skill-tag">IBM watsonx Essentials</span>
+
+      <!-- Data Analysis -->
+      <h4 class="skill-category">Data Analysis</h4>
+      <span class="skill-tag">Statistical Data Analysis</span>
+      <span class="skill-tag">IBM Data Analyst</span>
+
+      <!-- Cybersecurity -->
+      <h4 class="skill-category">Cybersecurity</h4>
+      <span class="skill-tag">Cybersecurity</span>
+      <span class="skill-tag">Vulnerability Assessment</span>
+
+      <!-- Other Certifications -->
+      <h4 class="skill-category">Certifications</h4>
+      <span class="skill-tag">IBM AI Developer Professional Certificate</span>
+      <span class="skill-tag">Introduction to HTML, CSS, & JavaScript</span>
     </div>
   </aside><!-- End Left Sidebar -->
 
   <!-- Center Column -->
   <main class="center-column page-content">
     <nav class="content-tabs" role="tablist">
-      <button class="tab active" data-tab="experience" role="tab" aria-selected="true">Experience</button>
-      <button class="tab" data-tab="blog" role="tab" aria-selected="false">Blog</button>
+      <button class="tab active" data-tab="blog" role="tab" aria-selected="true">Blog</button>
     </nav>
 
-    <!-- Experience view -->
-    <div id="experience-view" class="content-view">
-      <article class="experience-card">
-        <div class="experience-header">
-          <h3 class="job-title">Senior Software Engineer</h3>
-          <p class="company">Tech Company Inc. | <span class="dates">Jan 2023 - Present</span></p>
-          <p class="location">Singapore, SG</p>
-        </div>
-        <p class="experience-description">
-          Leading development of scalable web applications, mentoring junior developers,
-          and driving technical architecture decisions for high-traffic platforms.
-        </p>
-      </article>
-
-      <article class="experience-card">
-        <div class="experience-header">
-          <h3 class="job-title">Software Engineer</h3>
-          <p class="company">Startup Studio | <span class="dates">Jun 2020 - Dec 2022</span></p>
-          <p class="location">Singapore, SG</p>
-        </div>
-        <p class="experience-description">
-          Built and maintained multiple client projects using modern web technologies.
-          Collaborated with design and product teams to deliver user-centric solutions.
-        </p>
-      </article>
-    </div>
-
     <!-- Blog view -->
-    <div id="blog-view" class="content-view hidden">
+    <div id="blog-view" class="content-view">
       <!-- Tags Filter Section -->
       <div class="tags-section">
         <h3 class="section-label">Filter by Tag</h3>

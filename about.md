@@ -3,31 +3,18 @@ layout: default
 title: About
 ---
 
+<!-- Background decorative elements -->
+<div class="page-bg-container">
+  <div class="page-bg-pattern"></div>
+  <div class="scan-lines"></div>
+
+  <div class="page-content">
 <section class="about-hero">
   <div class="about-avatar">
-    <img src="/assets/images/profile.svg" alt="Ethan Goh">
+    <img src="/assets/images/profile_current.jpeg" alt="Ethan Goh">
   </div>
   <h1 class="section-title">About Me</h1>
   <p class="about-tagline">{{ site.description }}</p>
-</section>
-
-<section class="about-stats">
-  <div class="stat-card">
-    <span class="stat-number">5+</span>
-    <span class="stat-label">Years Experience</span>
-  </div>
-  <div class="stat-card">
-    <span class="stat-number">50+</span>
-    <span class="stat-label">Projects Completed</span>
-  </div>
-  <div class="stat-card">
-    <span class="stat-number">30+</span>
-    <span class="stat-label">Open Source Contributions</span>
-  </div>
-  <div class="stat-card">
-    <span class="stat-number">100%</span>
-    <span class="stat-label">Client Satisfaction</span>
-  </div>
 </section>
 
 <section class="about-section">
@@ -43,47 +30,60 @@ title: About
   <h2>Skills</h2>
   <div class="skills-container">
     <div class="skill-category">
-      <h3><span class="category-icon">&#128187;</span> Frontend</h3>
+      <h3><span class="category-icon">&#128295;</span> Project Management</h3>
       <div class="skill-tags">
+        <span class="skill-tag">Management</span>
+        <span class="skill-tag">Team Leadership</span>
+      </div>
+    </div>
+    <div class="skill-category">
+      <h3><span class="category-icon">&#9881;</span> Software Development</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">Python (Programming Language)</span>
+        <span class="skill-tag">Software Development</span>
+        <span class="skill-tag">Web Development</span>
         <span class="skill-tag">JavaScript</span>
-        <span class="skill-tag">TypeScript</span>
-        <span class="skill-tag">React</span>
-        <span class="skill-tag">Vue.js</span>
-        <span class="skill-tag">HTML/CSS</span>
-        <span class="skill-tag">Tailwind</span>
+        <span class="skill-tag">OpenShift</span>
       </div>
     </div>
     <div class="skill-category">
-      <h3><span class="category-icon">&#9881;</span> Backend</h3>
+      <h3><span class="category-icon">&#129302;</span> AI & Machine Learning</h3>
       <div class="skill-tags">
-        <span class="skill-tag">Node.js</span>
-        <span class="skill-tag">Python</span>
-        <span class="skill-tag">PostgreSQL</span>
-        <span class="skill-tag">MongoDB</span>
-        <span class="skill-tag">REST APIs</span>
-        <span class="skill-tag">GraphQL</span>
+        <span class="skill-tag">Generative AI</span>
+        <span class="skill-tag">Large Language Models (LLM)</span>
+        <span class="skill-tag">IBM watson</span>
+        <span class="skill-tag">Artificial Intelligence (AI)</span>
       </div>
     </div>
     <div class="skill-category">
-      <h3><span class="category-icon">&#128736;</span> DevOps & Cloud</h3>
+      <h3><span class="category-icon">&#127873;</span> Prompt Engineering</h3>
       <div class="skill-tags">
-        <span class="skill-tag">AWS</span>
-        <span class="skill-tag">GCP</span>
-        <span class="skill-tag">Docker</span>
-        <span class="skill-tag">Kubernetes</span>
-        <span class="skill-tag">CI/CD</span>
-        <span class="skill-tag">GitHub Actions</span>
+        <span class="skill-tag">Prompt Engineering</span>
+        <span class="skill-tag">Prompt Engineering for Everyone</span>
+        <span class="skill-tag">IBM watsonx Foundations</span>
+        <span class="skill-tag">Generative AI Essentials</span>
+        <span class="skill-tag">IBM watsonx Essentials</span>
       </div>
     </div>
     <div class="skill-category">
-      <h3><span class="category-icon">&#128218;</span> Tools & Methods</h3>
+      <h3><span class="category-icon">&#128202;</span> Data Analysis</h3>
       <div class="skill-tags">
-        <span class="skill-tag">Git</span>
-        <span class="skill-tag">Agile</span>
-        <span class="skill-tag">TDD</span>
-        <span class="skill-tag">UI/UX Design</span>
-        <span class="skill-tag">System Design</span>
-        <span class="skill-tag">Code Review</span>
+        <span class="skill-tag">Statistical Data Analysis</span>
+        <span class="skill-tag">IBM Data Analyst</span>
+      </div>
+    </div>
+    <div class="skill-category">
+      <h3><span class="category-icon">&#128274;</span> Cybersecurity</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">Cybersecurity</span>
+        <span class="skill-tag">Vulnerability Assessment</span>
+      </div>
+    </div>
+    <div class="skill-category">
+      <h3><span class="category-icon">&#128197;</span> Certifications</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">IBM AI Developer Professional Certificate</span>
+        <span class="skill-tag">Introduction to HTML, CSS, & JavaScript</span>
       </div>
     </div>
   </div>
@@ -95,9 +95,17 @@ title: About
     <div class="education-item">
       <span class="edu-icon">&#127891;</span>
       <div class="edu-content">
-        <h4>B.S. Computer Science</h4>
-        <p>University Name | Graduated 2023</p>
-        <p class="terminal-comment">// Focused on software engineering, algorithms, and distributed systems</p>
+        <h4>Bachelor of Science, Cyber Forensics, Information Security & Management, Business Information System</h4>
+        <p>Murdoch University | 2015 – 2017</p>
+        <p class="terminal-comment">// Completed degree in Cyber Forensics, Information Security & Management, Business Information System. Allows me to think as a cyber investigator, CIO and CSO in relation to Risk Assignment and Management.</p>
+      </div>
+    </div>
+    <div class="education-item">
+      <span class="edu-icon">&#127891;</span>
+      <div class="edu-content">
+        <h4>Diploma in Mechatronics</h4>
+        <p>Singapore Polytechnic | 2002 – 2005</p>
+        <p class="terminal-comment">// Mechatronics, Robotics, and Automation Engineering</p>
       </div>
     </div>
   </div>
@@ -128,3 +136,6 @@ title: About
     </div>
   </div>
 </section>
+  </div>
+  </div>
+</div>

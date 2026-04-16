@@ -1,0 +1,11 @@
+# Jekyll generated site
+_site/
+
+# Jekyll cache
+.jekyll-cache/
+
+# Backup files
+*.bak
+
+# OS files
+.DS_Store
