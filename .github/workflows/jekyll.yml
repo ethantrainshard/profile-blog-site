@@ -30,7 +30,7 @@ jobs:
       - name: Build with Jekyll
         run: |
           gem install jekyll
-          jekyll build --baseurl "${{ github.event.repository.name }}"
+          jekyll build
         env:
           JEKYLL_ENV: production
 
