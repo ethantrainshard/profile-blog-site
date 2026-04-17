@@ -9,6 +9,7 @@ github: ethantrainshard
 linkedin: ethan-goh-9b6615a7
 
 # Build settings
+permalink: /:categories/:year/:month/:day/:title:output_ext
 markdown: kramdown
 kramdown:
   input: GFM
