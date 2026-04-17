@@ -11,7 +11,7 @@ title: About
   <div class="page-content">
 <section class="about-hero">
   <div class="about-avatar">
-    <img src="/assets/images/profile_current.jpeg" alt="Ethan Goh">
+    <img src="{{ site.baseurl }}/assets/images/profile_current.jpeg" alt="Ethan Goh">
   </div>
   <h1 class="section-title">About Me</h1>
   <p class="about-tagline">{{ site.description }}</p>
