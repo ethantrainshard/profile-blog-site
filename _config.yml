@@ -2,7 +2,7 @@
 name: Ethan Goh
 description: Professional portfolio and blog sharing insights on technology and development
 url: https://ethantrainshard.github.io/profile-blog-site/
-baseurl: /
+baseurl: /profile-blog-site
 avatar: /assets/images/profile_current.jpeg
 email: info@cyberitdad.xyz
 github: ethantrainshard
