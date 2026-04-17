@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: project
 title: "MigrateGo - Database Migration Tool"
 date: 2026-03-15 11:20:00
@@ -67,4 +67,4 @@ Built in Go for:
 
 - **Audit Logging**: Track who made what changes and when
 - **Approval Workflows**: Require approval before production migrations
-- **Zero-Downtime**: Safe online schema changes for large tables
+- **Zero-Downtime**: Safe online schema changes for large tables -->

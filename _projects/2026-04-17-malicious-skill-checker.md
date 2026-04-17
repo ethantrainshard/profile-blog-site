@@ -1,22 +1,24 @@
 ---
 layout: project
-title: "SnippetHub - Code Snippet Manager"
-date: 2026-03-10 08:30:00
+title: "Malicious Skill Checker"
+date: 2026-04-17 09:30:00
 category: web
-tags: [javascript, search, productivity]
-excerpt: "Organize, search, and share code snippets with powerful tagging and full-text search"
-demo_url: "https://github.com/ethangoh/snipphetub"
-github_url: "https://github.com/ethangoh/snippethub"
-stars: 203
-forks: 35
-last_updated: "1 week ago"
+tags: [python, search, cybersecurity]
+excerpt: "Search for malicious skills installed in common CLI Agentic tools"
+demo_url: ""
+github_url: ""
+stars: 0
+forks: 0
+last_updated: "Started Today"
 ---
 
 ## Overview
 
-SnippetHub is a powerful code snippet manager that helps developers organize their growing collection of code snippets. Features intelligent search, tagging, and seamless integration with popular IDEs.
+MaliciousSkillChecker is a script that allows users to search for malicious skills installed in common CLI Agentic tools. It uses common CLI commands that is destroys and/or download and insert malicious code into the system.
 
-## Features
+- **More to Come**
+
+<!-- ## Features
 
 - **Smart Search**: Full-text search with fuzzy matching and syntax highlighting
 - **Organized Collections**: Group snippets by project, language, or custom folders
@@ -65,4 +67,4 @@ Self-hosted option available. All your code stays on your machine or your server
 - **Frontend**: React with TypeScript
 - **Backend**: Node.js with Express
 - **Search**: Elasticsearch for powerful full-text search
-- **Database**: PostgreSQL with full-text search capabilities
+- **Database**: PostgreSQL with full-text search capabilities -->

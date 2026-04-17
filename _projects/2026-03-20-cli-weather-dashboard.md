@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: project
 title: "WeatherCLI - Terminal Weather Dashboard"
 date: 2026-03-20 16:45:00
@@ -65,4 +65,4 @@ update_interval: 30  # minutes
 
 ## Built For Developers
 
-Perfect for devs who live in the terminal and want quick weather checks without context switching.
+Perfect for devs who live in the terminal and want quick weather checks without context switching. -->
