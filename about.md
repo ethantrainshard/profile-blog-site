@@ -138,4 +138,3 @@ title: About
 </section>
   </div>
   </div>
-</div>
