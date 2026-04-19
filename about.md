@@ -3,12 +3,7 @@ layout: default
 title: About
 ---
 
-<!-- Background decorative elements -->
-<div class="page-bg-container">
-  <div class="page-bg-pattern"></div>
-  <div class="scan-lines"></div>
-
-  <div class="page-content">
+<div class="page-content">
 <section class="about-hero">
   <div class="about-avatar">
     <img src="{{ site.baseurl }}/assets/images/profile_current.jpeg" alt="Ethan Goh">
@@ -136,5 +131,4 @@ title: About
     </div>
   </div>
 </section>
-  </div>
   </div>

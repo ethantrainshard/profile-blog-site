@@ -44,8 +44,14 @@
 
 /* Terminal Background - Solid black */
 body {
-  background: var(--color-bg);
+  background:
+    var(--color-bg),
+    radial-gradient(circle at 20% 80%, var(--color-primary-dim) 0%, transparent 40%),
+    radial-gradient(circle at 80% 20%, var(--color-secondary-dim) 0%, transparent 40%),
+    radial-gradient(circle at 40% 40%, var(--color-accent-dim) 0%, transparent 30%);
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   position: relative;
   overflow-x: hidden;
 }
@@ -68,8 +74,12 @@ body {
   font-family: var(--font-body);
   line-height: 1.6;
   color: var(--color-text);
-  background-color: var(--color-bg);
   overflow-x: hidden;
+}
+
+main {
+  flex: 1;
+  padding-top: 5rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1202,45 +1212,6 @@ section {
    Reusable glow effects for all pages
    ============================================ */
 
-/* Universal page background container */
-.page-bg-container {
-  position: relative;
-  overflow: hidden;
-}
-
-/* Background glow pattern - radial gradients in corners */
-.page-bg-pattern {
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(circle at 20% 80%, var(--color-primary-dim) 0%, transparent 40%),
-    radial-gradient(circle at 80% 20%, var(--color-secondary-dim) 0%, transparent 40%),
-    radial-gradient(circle at 40% 40%, var(--color-accent-dim) 0%, transparent 30%);
-  pointer-events: none;
-  z-index: 0;
-}
-
-/* Scan lines effect for terminal feel */
-.scan-lines {
-  position: absolute;
-  inset: 0;
-  background: repeating-linear-gradient(
-    0deg,
-    rgba(74, 246, 38, 0.02) 0px,
-    rgba(74, 246, 38, 0.02) 1px,
-    transparent 1px,
-    transparent 4px
-  );
-  pointer-events: none;
-  z-index: 1;
-}
-
-/* Content wrapper to sit above background */
-.page-content {
-  position: relative;
-  z-index: 2;
-}
-
 /* Universal card hover glow effect */
 .card-hover-glow {
   transition: all 0.25s ease;
@@ -1261,33 +1232,6 @@ section {
   position: relative;
   padding: 8rem 2rem 6rem;
   overflow: hidden;
-}
-
-/* Background decorative patterns */
-.contact-bg-pattern {
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(circle at 20% 80%, var(--color-primary-dim) 0%, transparent 40%),
-    radial-gradient(circle at 80% 20%, var(--color-secondary-dim) 0%, transparent 40%),
-    radial-gradient(circle at 40% 40%, var(--color-accent-dim) 0%, transparent 30%);
-  pointer-events: none;
-  z-index: 0;
-}
-
-/* Scan lines effect for terminal feel */
-.scan-lines {
-  position: absolute;
-  inset: 0;
-  background: repeating-linear-gradient(
-    0deg,
-    rgba(74, 246, 38, 0.02) 0px,
-    rgba(74, 246, 38, 0.02) 1px,
-    transparent 1px,
-    transparent 4px
-  );
-  pointer-events: none;
-  z-index: 1;
 }
 
 /* Main wrapper */
@@ -1884,7 +1828,6 @@ footer {
   background: var(--color-surface);
   border-top: 1px solid var(--color-border);
   padding: 3rem 2rem 2rem;
-  margin-top: 6rem;
 }
 
 .footer-content {
@@ -2118,7 +2061,6 @@ footer {
 
 .post-page {
   padding-top: 6rem;
-  min-height: 100vh;
 }
 
 .post-container {
@@ -3359,7 +3301,6 @@ footer {
 
 .experience-section {
   padding: 8rem 2rem 6rem;
-  min-height: 100vh;
 }
 
 .experience-timeline {
