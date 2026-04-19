@@ -3,7 +3,11 @@ layout: page
 title: Experience
 ---
 
-<section class="experience-section">
+<section class="experience-section page-bg-container">
+  <!-- Background glow pattern -->
+  <div class="page-bg-pattern"></div>
+  <div class="scan-lines"></div>
+
   <div class="page-content">
     <h1 class="section-title">Experience</h1>
 
