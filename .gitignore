@@ -9,3 +9,5 @@ _site/
 
 # OS files
 .DS_Store
+
+.playwright-cli
