@@ -857,8 +857,7 @@ section {
   max-width: none;
   margin-left: 0;
   margin-right: 0;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 6rem 2rem 2rem;
 }
 
 .blog-filters {
