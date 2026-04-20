@@ -1277,6 +1277,9 @@ section {
   position: relative;
   padding: 8rem 2rem 6rem;
   overflow: hidden;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 /* Background decorative patterns */
