@@ -851,8 +851,11 @@ section {
    BLOG LAYOUT
    ============================================ */
 .blog-list {
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .blog-filters {
