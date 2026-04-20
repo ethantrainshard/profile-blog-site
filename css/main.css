@@ -2134,6 +2134,9 @@ footer {
 .post-page {
   padding-top: 6rem;
   min-height: 100vh;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .post-container {
