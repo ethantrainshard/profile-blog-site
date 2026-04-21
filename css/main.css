@@ -1234,6 +1234,15 @@ section {
   overflow: visible;
 }
 
+/* About page: pull gradient up behind fixed header */
+.page-bg-container:has(.about-hero) {
+  margin-top: -6rem;
+}
+
+.page-content:has(.about-hero) {
+  padding-top: 6rem;
+}
+
 /* Background glow pattern - radial gradients in corners */
 .page-bg-pattern {
   position: absolute;
