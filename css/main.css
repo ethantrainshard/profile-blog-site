@@ -1243,13 +1243,20 @@ section {
   padding-top: 6rem;
 }
 
-/* Experience page: pull gradient up behind fixed header, full viewport width */
+/* Experience page: remove outer section constraints for full-width backgrounds */
+main > section.page-content {
+  max-width: none;
+  padding: 0;
+}
+
+/* Experience page: pull gradient up behind fixed header */
 .page-bg-container:has(.experience-section) {
   margin-top: -6rem;
 }
 
+/* Experience page: main already provides 6rem top padding; don't stack */
 .page-content:has(.experience-section) {
-  padding-top: 6rem;
+  padding-top: 0;
 }
 
 .page-bg-container:has(.experience-section) .page-bg-pattern,
