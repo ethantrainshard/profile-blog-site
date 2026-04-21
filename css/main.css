@@ -475,9 +475,13 @@ section {
 .projects-section {
   min-height: 100vh;
   max-width: none;
-  margin-top: 2rem;
+  margin-top: -6rem;
   margin-left: 0;
   margin-right: 0;
+}
+
+.projects-section .page-content {
+  padding-top: 6rem;
 }
 
 /* Terminal-style project card header */
