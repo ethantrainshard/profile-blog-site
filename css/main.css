@@ -856,7 +856,12 @@ section {
   max-width: none;
   margin-left: 0;
   margin-right: 0;
-  padding: 6rem 2rem 2rem;
+  padding: 0 2rem 2rem;
+  margin-top: -6rem;
+}
+
+.blog-list .container {
+  padding-top: 6rem;
 }
 
 .blog-filters {
@@ -1222,7 +1227,7 @@ section {
 /* Universal page background container */
 .page-bg-container {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 /* Background glow pattern - radial gradients in corners */
