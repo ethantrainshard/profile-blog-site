@@ -1243,6 +1243,21 @@ section {
   padding-top: 6rem;
 }
 
+/* Experience page: pull gradient up behind fixed header, full viewport width */
+.page-bg-container:has(.experience-section) {
+  margin-top: -6rem;
+}
+
+.page-content:has(.experience-section) {
+  padding-top: 6rem;
+}
+
+.page-bg-container:has(.experience-section) .page-bg-pattern,
+.page-bg-container:has(.experience-section) .scan-lines {
+  width: 100vw;
+  left: calc(50% - 50vw);
+}
+
 /* Background glow pattern - radial gradients in corners */
 .page-bg-pattern {
   position: absolute;
