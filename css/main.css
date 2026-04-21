@@ -2405,6 +2405,17 @@ main {
   max-width: 1400px;
   margin: 0 auto;
   padding: 5rem 2rem 2rem;
+  margin-top: -6rem;
+}
+
+.profile-layout > .page-content {
+  padding-top: 6rem;
+}
+
+.profile-layout .page-bg-pattern,
+.profile-layout .scan-lines {
+  width: 100vw;
+  margin-left: calc(50vw - 50%);
 }
 
 /* Left Sidebar - Profile */
