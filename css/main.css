@@ -1254,15 +1254,15 @@ main > section.page-content {
   margin-top: -6rem;
 }
 
-/* Experience page: main already provides 6rem top padding; don't stack */
-.page-content:has(.experience-section) {
-  padding-top: 0;
+/* Experience page: inner content spacing */
+.experience-section > .page-content {
+  padding: 0 2rem;
 }
 
+/* Experience page: full-width backgrounds, no 100vw scrollbar issues */
 .page-bg-container:has(.experience-section) .page-bg-pattern,
 .page-bg-container:has(.experience-section) .scan-lines {
-  width: 100vw;
-  left: calc(50% - 50vw);
+  width: 100%;
 }
 
 /* Background glow pattern - radial gradients in corners */
@@ -3432,7 +3432,7 @@ main {
    ============================================ */
 
 .experience-section {
-  padding: 8rem 2rem 6rem;
+  padding: 8rem 0 6rem;
   min-height: 100vh;
 }
 
