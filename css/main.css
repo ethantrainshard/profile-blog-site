@@ -189,7 +189,6 @@ header {
   left: 0;
   right: 0;
   background: var(--color-bg);
-  border-bottom: 1px solid var(--color-border);
   z-index: 1000;
 }
 
@@ -2894,7 +2893,6 @@ main {
   left: 0;
   right: 0;
   background: var(--color-bg);
-  border-bottom: 1px solid var(--color-border);
   padding: 0.75rem 2rem;
   display: flex;
   justify-content: space-between;
