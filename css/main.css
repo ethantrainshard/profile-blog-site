@@ -2415,7 +2415,7 @@ main {
 .profile-layout .page-bg-pattern,
 .profile-layout .scan-lines {
   width: 100vw;
-  margin-left: calc(50vw - 50%);
+  left: calc(50% - 50vw);
 }
 
 /* Left Sidebar - Profile */
