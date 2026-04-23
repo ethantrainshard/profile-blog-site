@@ -3433,7 +3433,7 @@ main {
    ============================================ */
 
 .experience-section {
-  padding: 8rem 0 6rem;
+  padding: 2rem 0 6rem;
   min-height: 100vh;
   max-width: none;
   margin-left: 0;
@@ -3628,7 +3628,7 @@ main {
 /* Responsive */
 @media (max-width: 768px) {
   .experience-section {
-    padding: 7rem 1.5rem 4rem;
+    padding: 2rem 1.5rem 4rem;
   }
 
   .experience-timeline::before {
