@@ -1245,9 +1245,8 @@ section {
 
 /* Experience page: remove outer section constraints for full-width backgrounds */
 main > section.page-content {
-  max-width: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
+  max-width: none;
+  padding: 0;
 }
 
 /* Experience page: pull gradient up behind fixed header */
