@@ -47,6 +47,11 @@ title: Experience
           </div>
         </div>
         <div class="experience-details">
+          <ul class="responsibilities">
+            <li>Work closely with IBM internal global teams to develop, test, deploy and maintain web applications using Python and other technologies.</li>
+            <li>Part of CSIRT team to create custom applications for incident response platform</li>
+            <li>Worked with IBM internal stakeholders, to manage, plan and develop for projects</li>
+          </ul>
           <div class="skills">
             <span class="skill-tag">Python</span>
           </div>

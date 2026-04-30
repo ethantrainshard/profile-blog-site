@@ -21,8 +21,8 @@ title: About
   <h2>Background</h2>
   <div class="about-card">
     <p class="terminal-comment">// Passionate developer with a love for building elegant solutions</p>
-    <p>I'm a passionate developer with experience in building web applications and digital solutions. I enjoy solving complex problems and creating intuitive user experiences. My approach combines technical expertise with a user-centric mindset to deliver products that make a real impact.</p>
-    <p>When I'm not coding, you can find me contributing to open source projects, writing technical blog posts, or exploring the outdoors.</p>
+    <p>An individual with the passion in Cybersecurity and a developer with experience in building web applications. I enjoy solving complex problems and explore new technologies. My approach combines technical expertise with a user-centric mindset to deliver products that make a real impact.</p>
+    <p>When I'm not coding, you can find me checking out open source projects and deploying them, writing technical blog posts, or exploring the outdoors with the family.</p>
   </div>
 </section>
 
@@ -30,19 +30,18 @@ title: About
   <h2>Skills</h2>
   <div class="skills-container">
     <div class="skill-category">
-      <h3><span class="category-icon">&#128295;</span> Project Management</h3>
+      <h3><span class="category-icon">&#128295;</span> Team Management</h3>
       <div class="skill-tags">
-        <span class="skill-tag">Management</span>
+        <span class="skill-tag">Problem Solving</span>
         <span class="skill-tag">Team Leadership</span>
       </div>
     </div>
     <div class="skill-category">
-      <h3><span class="category-icon">&#9881;</span> Software Development</h3>
+      <h3><span class="category-icon">&#9881;</span> Software and Infrastructure Development</h3>
       <div class="skill-tags">
         <span class="skill-tag">Python (Programming Language)</span>
-        <span class="skill-tag">Software Development</span>
+        <span class="skill-tag">Kubernetes</span>
         <span class="skill-tag">Web Development</span>
-        <span class="skill-tag">JavaScript</span>
         <span class="skill-tag">OpenShift</span>
       </div>
     </div>
@@ -75,7 +74,7 @@ title: About
     <div class="skill-category">
       <h3><span class="category-icon">&#128274;</span> Cybersecurity</h3>
       <div class="skill-tags">
-        <span class="skill-tag">Cybersecurity</span>
+        <span class="skill-tag">Forensic Analysis</span>
         <span class="skill-tag">Vulnerability Assessment</span>
       </div>
     </div>
@@ -116,8 +115,8 @@ title: About
   <div class="interests-grid">
     <div class="interest-card">
       <span class="interest-icon">&#128187;</span>
-      <h4>Open Source</h4>
-      <p>Contributing to projects that make technology better for everyone</p>
+      <h4>Cybersecurity</h4>
+      <p>Protecting people, to keep them safe in the cyber world</p>
     </div>
     <div class="interest-card">
       <span class="interest-icon">&#128218;</span>
@@ -126,13 +125,13 @@ title: About
     </div>
     <div class="interest-card">
       <span class="interest-icon">&#128247;</span>
-      <h4>Photography</h4>
-      <p>Capturing moments and exploring visual storytelling</p>
+      <h4>Cooking</h4>
+      <p>Cooking up a meal that makes me feel good for the family</p>
     </div>
     <div class="interest-card">
       <span class="interest-icon">&#127942;</span>
-      <h4>Hiking</h4>
-      <p>Finding clarity and inspiration in nature</p>
+      <h4>Developing and Deploying Open Source Applications</h4>
+      <p>Learning new and interesting technologies everyday</p>
     </div>
   </div>
 </section>
