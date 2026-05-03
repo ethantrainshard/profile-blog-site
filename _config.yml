@@ -1,7 +1,8 @@
 # Profile Blog - Jekyll Configuration
 name: Ethan Goh
 description: Professional portfolio and blog sharing insights on technology and development
-url: https://ethantrainshard.github.io/profile-blog-site/
+# url: https://ethantrainshard.github.io/profile-blog-site/
+url: https://cyberitdad.xyz/profile-blog-site/
 baseurl: /profile-blog-site
 avatar: /assets/images/profile_current.jpeg
 email: info@cyberitdad.xyz
